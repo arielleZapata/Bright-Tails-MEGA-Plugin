@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brighttails/booking-package-tracker",
+  "version": "0.1.0",
+  "title": "Booking Package Tracker",
+  "category": "common",
+  "icon": "calendar-alt",
+  "attributes": {
+    "email": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "viewScript": "file:./frontend.js"
+}

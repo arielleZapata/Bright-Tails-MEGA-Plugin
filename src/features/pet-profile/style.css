@@ -1,0 +1,55 @@
+@layer theme, base, components, utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Fuzzy+Bubbles:wght@400;700&family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss/theme.css" layer(theme);
+
+.my-unique-plugin-wrapper-class {
+  @import "tailwindcss/preflight.css" layer(base);
+  @import "tailwindcss/utilities.css" layer(utilities);
+}
+
+/* Primary Font */
+.bowlby-one-sc-regular {
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Secondary Font */
+.fuzzy-bubbles-regular {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuzzy-bubbles-bold {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Text and Accent Font */
+.outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+/* Ensure all text in the plugin is black - override Tailwind defaults */
+.my-unique-plugin-wrapper-class {
+  color: #000000 !important;
+}
+
+.my-unique-plugin-wrapper-class strong,
+.my-unique-plugin-wrapper-class span,
+.my-unique-plugin-wrapper-class div,
+.my-unique-plugin-wrapper-class p {
+  color: #000000 !important;
+}
+
+.my-unique-plugin-wrapper-class .bowlby-one-sc-regular {
+  color: #000000 !important;
+}
+
+.my-unique-plugin-wrapper-class .outfit {
+  color: #000000 !important;
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brighttails/brighttailsmegaplugin",
+  "version": "0.1.0",
+  "title": "Bright Tails MEGA Plugin",
+  "category": "common",
+  "icon": "welcome-learn-more",
+  "attributes": {
+    "name": { "type": "string" },
+    "age": { "type": "string" },
+    "breed": { "type": "string" },
+    "weight": { "type": "string" },
+    "imageId": { "type": "number" },
+    "imageUrl": { "type": "string" },
+    "ownerEmail": { "type": "string" }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./frontend.js"
+}
