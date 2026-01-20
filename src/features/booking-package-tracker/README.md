@@ -1,19 +1,13 @@
-# Booking Package Tracker Feature
+# Booking Package Tracker
 
-This folder is reserved for the future Booking Package Tracker feature.
+Tracks customer credits and remaining lessons.
 
-## Planned Structure
+## Current Status
 
-When implemented, this feature will likely include:
-- `booking-package-tracker.php` - Main PHP file for the feature
-- `index.js` - Editor block JavaScript (if block-based)
-- `frontend.js` - Frontend JavaScript (if needed)
-- `block.json` - Block configuration (if block-based)
-- `style.css` - Styles for the feature
-- `render.php` - Server-side rendering template (if block-based)
+Manual operation. Credits are displayed but not automatically deducted when bookings complete.
 
-## Implementation Notes
+## Future Improvements
 
-- All feature PHP should be in a dedicated `.php` file
-- Feature will be loaded from `index.php` at the plugin root
-- Follow the same organizational structure as `pet-profile` feature
+- Automatically deduct credits when Cal.com bookings are completed
+- Connect Stripe payments with Cal.com bookings for full automation
+- Real-time sync between payments and bookings
